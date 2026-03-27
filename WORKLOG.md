@@ -5,7 +5,7 @@ This file serves as an index for all worklog entries. Individual worklog files a
 ## 2026-03-27
 
 ### Initial ARIA-NOVA-SOL Triad Creation
-- **File**: [worklog/2026-03-26-09-00-00-initial-aria-nova-sol-triad-creation.md](worklog/2026-03-27-09-00-00-initial-aria-nova-sol-triad-creation.md)
+- **File**: [worklog/2026-03-26-09-00-00-initial-aria-nova-sol-triad-creation.md](worklog/2026-03-26-09-00-00-initial-aria-nova-sol-triad-creation.md)
 - **Time**: 09:00:00 (estimated)
 
 ### Research on Parallel Multi-Agent Architecture (24/7 Agents)
