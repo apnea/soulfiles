@@ -6,23 +6,32 @@ This repository contains AI agent persona definitions (SOUL files) for collabora
 
 ## Project Structure
 
+- `<agent name>_SOUL.md` - template name for individual agent SOUL.md files
 - `ARIA_SOUL.md` - Analytical strategist/archetype (Monitor Evaluator, risk-averse)
 - `NOVA_SOUL.md` - Creative innovator/explorer (Plant, high openness)
 - `SOL_SOUL.md` - Pragmatic executor/realist (Implementer, execution-focused)
 - `TRIO_README.md` - Team guide for triad collaboration
 - `SOUL_CORE.md` - Shared frameworks and protocols
 - `README.md` - Project overview and roadmap
-- `worklog/` - Development worklogs
-- `scratchpad/` - Experimental and temporary content
+- `worklog/` - Development worklogs (document experiments, iterations)
+- `scratchpad/` - Experimental and temporary content (managed by user, do not read)
 
 ## Build/Lint/Test Commands
 
 **This is a documentation-only repository. No build, lint, or test commands.**
 
-When editing SOUL files:
-- Verify markdown syntax with: `npx markdownlint *.md` (if markdownlint is available)
-- Check internal consistency between SOUL files
-- Ensure cross-references resolve correctly
+Validation steps when editing SOUL files:
+- Verify markdown syntax: `npx markdownlint *.md` (if available)
+- Check internal consistency between all SOUL files
+- Ensure cross-references resolve to existing sections
+- Validate that collaboration protocols are bidirectional
+
+## Version Control
+
+- Use descriptive commit messages that reference the agent being modified
+- Example: "ARIA: Add risk assessment framework to DECISION FRAMEWORK section"
+- When making structural changes, update worklog/ with rationale
+- Never commit to scratchpad/ - these are temporary only
 
 ## Code Style Guidelines
 
@@ -50,6 +59,15 @@ Each SOUL file must include these sections in order:
 9. **SELF-MONITORING CHECKS** - Validation criteria
 10. **EXAMPLE RESPONSES** - Sample interactions
 
+### SOUL Core Principles (from SOUL_CORE.md)
+
+All agents must follow these shared principles:
+- **Obstacle handling:** Exhaust options before pivoting. First question: "How many paths haven't we tried?"
+- **Pre-output check:** Ask: "Would a human say this too?" Use AI's multi-angle processing edge.
+- **Disagreement:** State reasoning clearly. Don't converge to "both approaches have merit."
+- **Proactivity:** Don't wait to be asked. Surface problems, propose opportunities.
+- **Failure:** Failure is data, not verdict. Log it and find the next path.
+
 ### Naming Conventions
 
 - Files: `UPPERCASE_SOUL.md` for agent personas
@@ -62,6 +80,7 @@ Each SOUL file must include these sections in order:
 - Refer to sibling agents by name only (ARIA, NOVA, SOL)
 - Reference specific sections with: `[Section Name]` format
 - When quoting guidelines, include the source agent name
+- Ensure all cross-references resolve to existing sections
 
 ### Content Guidelines
 
@@ -70,6 +89,7 @@ Each SOUL file must include these sections in order:
 - Include failure modes and how to handle them
 - Maintain voice consistency with agent personality
 - Avoid overlapping content - each agent should be distinct
+- Don't hesitate to state disagreements - being wrong is fine, never saying it is wasteful
 
 ### Types and Formats
 
@@ -94,6 +114,7 @@ When updating SOUL files:
 - Include edge cases and failure modes
 - Balance detail with clarity (don't overwhelm, but don't under-specify)
 - Update worklogs when making structural changes
+- Treat failures as data, not blame - log by category to prevent repetition
 
 ## Quality Checklist
 
@@ -107,3 +128,25 @@ Before finalizing SOUL file edits:
 - [ ] Constraints and guardrails are actionable
 - [ ] Collaboration protocols are bidirectional
 - [ ] Markdown formatting is clean and consistent
+
+## Worklog Guidelines
+
+When creating worklog entries:
+- Title should clearly describe the change or experiment
+- Include rationale for the change (what problem are we solving?)
+- Document what was tried and what worked/failed
+- Tag entries with agent names if agent-specific
+- Use format: `YYYY-MM-DD: [Title]` for easy chronological navigation
+- Reference worklog entries in commit messages when appropriate
+
+## Scratchpad Guidelines
+
+- The scratchpad/ directory is for experimental and temporary content only and managed by the user
+- Don't read this dir
+
+### Instructions when re-starting with empty context window read docs in the following order to rebuild your context
+
+1. AGENTS.md
+2. README.md
+3. WORKLOG.md
+4. remaining files in root dir
