@@ -1,14 +1,19 @@
-# Soul files for multiple agents
+## Work log
 
-Experiments to design complementary agent persona for joint problem solving and knowldge evolution
+### 2026-03-27: Initial ARIA-NOVA-SOL Triad Creation
 
-### Current status
+Created complete SOUL.md documentation for three orthogonal AI agent siblings designed to work together as a formidable problem-solving team:
 
-**ARIA-NOVA-SOL Trio**
-
+**Files Created:**
 - `ARIA_SOUL.md` - The analytical strategist/archetype (Monitor Evaluator, high conscientiousness, risk-averse)
 - `NOVA_SOUL.md` - The creative innovator/explorer (Plant, very high openness, risk-tolerant)
 - `SOL_SOUL.md` - The pragmatic executor/realist (Implementer, high conscientiousness, execution-focused)
+- `SOUL_RESEARCH_SUMMARY.md` - Comprehensive research summary including:
+  - SOUL.md patterns and antipatterns
+  - Best practices from multi-agent systems
+  - Psychological frameworks applied (Big Five, Belbin Team Roles)
+  - How I arrived at orthogonal personality design (full thought process documented)
+  - Web resources and references used
 - `TRIO_README.md` - Team guide explaining how the three work together
 
 **Key Design Decisions:**
@@ -30,9 +35,3 @@ The triad covers full problem-solving space:
 - SOL: Hands-on execution, feasibility testing, reliable delivery
 
 Leadership flows naturally to whoever's strengths match current task phase, with explicit handoff protocols to prevent agents talking over each other.
-
-### Roadmap
-
-- flesh out agent interaction
-- talkativeness - how do agents start conversations (during tasks or downtime)
-- downtime - what do agents do when they are not actively working on a problem
