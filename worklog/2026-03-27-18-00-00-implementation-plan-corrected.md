@@ -124,32 +124,4 @@
 
 - Finally: IT1-IT4 (implementation) - requires Picoclaw + Discord setup by user
 
-763: 
 
-764: 
-
-765: 
-
-766: 
-
-**2026-03-27: AGENTS.md Correction**
-
-768: 
-
-User feedback: AGENTS.md should not contain project status (that belongs in worklog only).
-
-770: 
-
-**Changes made:**
-
-- Removed "Current Project: Parallel Multi-Agent Architecture" section from AGENTS.md
-
-- Added "No emojis in documentation" guideline to Markdown Conventions section
-
-774: 
-
-**Rationale:** AGENTS.md is for repository structure, coding conventions, and quality guidelines. Project status, implementation plans, and design decisions belong in worklog/WORKLOG.md only.
-
-776: 
-
-777: 
