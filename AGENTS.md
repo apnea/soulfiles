@@ -137,7 +137,7 @@ When creating worklog entries:
 - Document what was tried and what worked/failed
 - Tag entries with agent names if agent-specific
 - Use format: `YYYY-MM-DD: [Title]` for easy chronological navigation
-- Reference worklog entries in commit messages when appropriate
+- Git commit every time you changed the worklog file with a message `YYYY-MM-DD-HH-MM-SS: [relevant commit message]`
 
 ## Scratchpad Guidelines
 
