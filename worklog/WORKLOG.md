@@ -696,3 +696,82 @@ Benefits:
 686: - Moltbook: https://www.moltbook.com
 687: 
 688: (End of file - total 688 lines)
+689: (End of file - total 688 lines)
+690: 
+691: **2026-03-27: Implementation Plan - Corrected**
+692: 
+693: **Plan Structure:**
+694: - Clear separation between design and engineering tasks
+695: - Design tasks address unknowns (require thinking/decisions)
+696: - Engineering tasks implement once design is decided
+697: 
+698: **Design Tasks (Unknowns to resolve)**
+699: 
+700: **DT1: SESSION_STATE.md schema design**
+701: - What fields are required per session?
+702: - Schema: session_id (UUID), task description, participants (ARIA, NOVA, SOL), proposals (from each agent), votes, conversation thread, completion status, timestamp
+703: - Unknown: Exact field structure and data types
+704: 
+705: **DT2: Collaboration protocol step-by-step**
+706: - User triggers with @brainstorm [task description]
+707: - All three agents join #trio-brainstorm
+708: - Each agent proposes approach based on SOUL strengths
+709: - Agents review each other's proposals
+710: - Vote on which approach to follow (majority or weighted)
+711: - Winner leads session, others contribute via mentions when appropriate
+712: - Unknown: Exact conversation flow and handoff rules
+713: 
+714: **DT3: Discord channel structure and roles**
+715: - #trio-voice (public collaborative space - optional)
+716: - #aria-chatter (ARIA's channel - proactive monitoring later)
+717: - #nova-chatter (NOVA's channel - proactive monitoring later)
+718: - #sol-chatter (SOL's channel - proactive monitoring later)
+719: - #trio-brainstorm (shared channel for user-triggered collaborative sessions)
+720: - Unknown: Which channels are essential for MVP
+721: 
+722: **DT4: Voting mechanism**
+723: - Majority vote: 2 out of 3 wins
+724: - Weighted vote: Votes carry weight based on task type (e.g., analytical task = ARIA's vote counts more)
+725: - Unknown: Which mechanism to use, tie-breaking rules
+726: 
+727: **DT5: Completion criteria for sessions**
+728: - User says "done"
+729: - Agents agree they're done (consensus)
+730: - Unknown: How agents know they're done, what "consensus" looks like
+731: 
+732: **Engineering Tasks (Once design complete)**
+733: 
+734: **ET1-ET5: Documentation updates**
+735: - ET1: Update ARIA_SOUL.md with parallel collaboration protocols
+736: - ET2: Update NOVA_SOUL.md with parallel collaboration protocols
+737: - ET3: Update SOL_SOUL.md with parallel collaboration protocols
+738: - ET4: Update TRIO_README.md with new parallel workflow (replace sequential)
+739: - ET5: Create PARALLEL_PROTOCOL.md (new document for orchestration rules)
+740: 
+741: **Implementation Tasks (User to execute after design)**
+742: 
+743: **IT1-IT4: Picoclaw + Discord setup**
+744: - IT1: Create Discord server structure
+745: - IT2: Configure 3 Picoclaw instances with respective SOUL.md files
+746: - IT3: Test session initiation and proposal-voting-lead flow
+747: - IT4: Test session lifecycle (start, collaborate, complete, archive)
+748: 
+749: **Priority:**
+750: - Start with DT1-DT5 (design tasks) - resolve all unknowns first
+751: - Next: ET1-ET5 (documentation updates) - update all SOUL files
+752: - Finally: IT1-IT4 (implementation) - requires Picoclaw + Discord setup by user
+753: 
+754: (End of file - total 754 lines)
+755: (End of file - total 754 lines)
+756: 
+757: **2026-03-27: AGENTS.md Correction**
+758: 
+759: User feedback: AGENTS.md should not contain project status (that belongs in worklog only).
+760: 
+761: **Changes made:**
+762: - Removed "Current Project: Parallel Multi-Agent Architecture" section from AGENTS.md
+763: - Added "No emojis in documentation" guideline to Markdown Conventions section
+764: 
+765: **Rationale:** AGENTS.md is for repository structure, coding conventions, and quality guidelines. Project status, implementation plans, and design decisions belong in worklog/WORKLOG.md only.
+766: 
+767: (End of file - total 767 lines)

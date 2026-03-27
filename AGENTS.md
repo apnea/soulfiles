@@ -43,6 +43,7 @@ Validation steps when editing SOUL files:
 - Use `**bold**` for emphasis, not `__bold__`
 - Use tables with consistent column alignment (left or center)
 - Max line length: ~80-100 characters (soft guideline)
+- No emojis in documentation
 
 ### SOUL File Structure
 
