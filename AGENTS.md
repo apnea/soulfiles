@@ -150,9 +150,10 @@ Use kebab-case for titles (lowercase with hyphens). Example: session-state-schem
 - The scratchpad/ directory is for experimental and temporary content only and managed by the user
 - Don't read this dir
 
-### Instructions when re-starting with empty context window read docs in the following order to rebuild your context
+### Instructions when re-starting with empty context window read docs in the following order to rebuild your context, aka cold start
 
 1. AGENTS.md
 2. README.md
 3. WORKLOG.md
 4. remaining files in root dir
+5. the last worklog file
