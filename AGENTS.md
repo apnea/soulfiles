@@ -132,13 +132,19 @@ Before finalizing SOUL file edits:
 
 ## Worklog Guidelines
 
-When creating worklog entries:
-- Title should clearly describe the change or experiment
-- Include rationale for the change (what problem are we solving?)
-- Document what was tried and what worked/failed
-- Tag entries with agent names if agent-specific
-- Use format: `YYYY-MM-DD: [Title]` for easy chronological navigation
-- Git commit every time you changed the worklog file with a message `YYYY-MM-DD-HH-MM-SS: [relevant commit message]`
+**Format:**
+- Individual worklog files: `worklog/YYYY-MM-DD-HH-MM-SS-<title>.md`
+- Index: WORKLOG.md in root directory links to all worklog files
+- Legacy: Old single-file worklog archived in worklog/archive/
+
+**Creating New Worklog Entry:**
+1. Create new file in worklog/ directory with format YYYY-MM-DD-HH-MM-SS-<title>.md
+2. Add content (no line numbers)
+3. Update WORKLOG.md index with link to new entry
+4. Commit changes with descriptive message
+
+**Title Format:**
+Use kebab-case for titles (lowercase with hyphens). Example: session-state-schema-design
 
 ## Scratchpad Guidelines
 
