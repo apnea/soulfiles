@@ -34,7 +34,6 @@ This file serves as an index for all worklog entries. Individual worklog files a
 
 - Individual worklog files: `worklog/YYYY-MM-DD-HH-MM-SS-<title>.md`
 - Index: This file (WORKLOG.md in root directory) links to all worklog files
-- Legacy: Old single-file worklog archived in `worklog/archive/2026-03-27-legacy-worklog.md`
 
 ### Creating New Worklog Entry
 

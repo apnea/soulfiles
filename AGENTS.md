@@ -135,7 +135,6 @@ Before finalizing SOUL file edits:
 **Format:**
 - Individual worklog files: `worklog/YYYY-MM-DD-HH-MM-SS-<title>.md`
 - Index: WORKLOG.md in root directory links to all worklog files
-- Legacy: Old single-file worklog archived in worklog/archive/
 
 **Creating New Worklog Entry:**
 1. Create new file in worklog/ directory with format YYYY-MM-DD-HH-MM-SS-<title>.md
