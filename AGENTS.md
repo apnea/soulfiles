@@ -156,4 +156,4 @@ Use kebab-case for titles (lowercase with hyphens). Example: session-state-schem
 2. README.md
 3. WORKLOG.md
 4. remaining files in root dir
-5. the last worklog file
+5. the last 3 worklog files
