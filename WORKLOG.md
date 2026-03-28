@@ -30,3 +30,9 @@ This file serves as an index for all worklog entries. Individual worklog files a
 - **File**: [worklog/2026-03-27-18-00-00-implementation-plan-corrected.md](worklog/2026-03-27-18-00-00-implementation-plan-corrected.md)
 - **Time**: 18:00:00 (estimated)
 
+## 2026-03-28
+
+### Shared Memory Schema Design
+- **File**: [worklog/2026-03-28-20-00-00-shared-memory-schema-design.md](worklog/2026-03-28-20-00-00-shared-memory-schema-design.md)
+- **Time**: 20:00:00 (estimated)
+
